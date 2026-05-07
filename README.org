@@ -1,0 +1,3 @@
+#+title: Mu2e BDSIM
+
+An attempt at using [[https://bdsim-collaboration.github.io/bdsim/sphinx/index.html][BDSIM]] to read official MAD-X and G4 geometry of the Mu2e beamline (and maybe the whole experiment someday...)

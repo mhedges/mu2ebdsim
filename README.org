@@ -23,6 +23,6 @@ running e.g. MAD-X through the =pybdsim= interface (see instructions in BDSIM do
 the "Setup BDSIM" procedure above---it must be installed separately if generation of =.tfs= files from =.madx= inputs
 are desired.
 
-* TODO
+* To-do
 ** M4
 *** [ ] V901 appears to have no magnetic field, so beam is just completely lost. Why?

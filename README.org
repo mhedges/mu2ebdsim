@@ -1,3 +1,23 @@
 #+title: Mu2e BDSIM
 
 An attempt at using [[https://bdsim-collaboration.github.io/bdsim/sphinx/index.html][BDSIM]] to read official MAD-X and G4 geometry of the Mu2e beamline (and maybe the whole experiment someday...)
+
+* Instructions
+** Setup BDSIM
+On a machine with CVMFS:
+#+begin_src sh
+source /cvmfs/beam-physics.cern.ch/bdsim/x86_64-el9-gcc13-opt/bdsim-env-v1.7.7-g4v10.7.2.3-ftfp-boost.sh
+#+end_src
+
+Local installation of BDSIM is possible (see BDSIM documentation).
+** Running BDSIM
+BDSIM reads =.gmad= files. As of right now, there is no "global" =.gmad= input for all of Mu2e, but maybe there will be
+someday. I have attempted to provided quasi-official versions of the relevant =.gmad= files in subdirectories
+corresponding to beamline structure name (e.g. =M4=).
+
+Every section has 4 =.gmad= files, consisting of the "top level" file named after the beamline name, which then imports
+=_beam=, =_components=, =options=, and =sequence= files. This is the default structure of BDSIM conversion.
+*** Building .gmad from MAD-X inputs
+BDSIM reads =.gmad= files. It can, however, create these from "Twiss files", which are =.tfs= files produced from
+running e.g. MAD-X through the =pybdsim= interface (see instructions in BDSIM documentation).  MAD-X is not provided by the "Setup BDSIM" procedure above---it must be
+installed separately if generation of =.tfs= files from =.madx= inputs are desired.

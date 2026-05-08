@@ -4,7 +4,7 @@ An attempt at using [[https://bdsim-collaboration.github.io/bdsim/sphinx/index.h
 
 * Instructions
 ** Setup BDSIM
-On a machine with CVMFS:
+On a machine with CVMFS (e.g. =lxplus= and =mu2egpvm= computers):
 #+begin_src sh
 source /cvmfs/beam-physics.cern.ch/bdsim/x86_64-el9-gcc13-opt/bdsim-env-v1.7.7-g4v10.7.2.3-ftfp-boost.sh
 #+end_src

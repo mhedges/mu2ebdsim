@@ -16,7 +16,7 @@ someday. I have attempted to provided quasi-official versions of the relevant =.
 corresponding to beamline structure name (e.g. =M4=).
 
 Every section has 4 =.gmad= files, consisting of the "top level" file named after the beamline name, which then imports
-=_beam=, =_components=, =options=, and =sequence= files. This is the default structure of BDSIM conversion.
+=_beam=, =_components=, =_options=, and =_sequence= files. This is the default structure of BDSIM conversion.
 *** Building .gmad from MAD-X inputs
 BDSIM reads =.gmad= files. It can, however, create these from "Twiss files", which are =.tfs= files produced from
 running e.g. MAD-X through the =pybdsim= interface (see instructions in BDSIM documentation).  MAD-X is not provided by the "Setup BDSIM" procedure above---it must be

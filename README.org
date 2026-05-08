@@ -19,5 +19,10 @@ Every section has 4 =.gmad= files, consisting of the "top level" file named afte
 =_beam=, =_components=, =_options=, and =_sequence= files. This is the default structure of BDSIM conversion.
 *** Building .gmad from MAD-X inputs
 BDSIM reads =.gmad= files. It can, however, create these from "Twiss files", which are =.tfs= files produced from
-running e.g. MAD-X through the =pybdsim= interface (see instructions in BDSIM documentation).  MAD-X is not provided by the "Setup BDSIM" procedure above---it must be
-installed separately if generation of =.tfs= files from =.madx= inputs are desired.
+running e.g. MAD-X through the =pybdsim= interface (see instructions in BDSIM documentation). MAD-X is not provided by
+the "Setup BDSIM" procedure above---it must be installed separately if generation of =.tfs= files from =.madx= inputs
+are desired.
+
+* TODO
+** M4
+*** [ ] V901 appears to have no magnetic field, so beam is just completely lost. Why?

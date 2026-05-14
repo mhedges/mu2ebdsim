@@ -69,4 +69,6 @@ select, flag=twiss, clear;
 set,    format="14.8f";
 !select,  flag=twiss, column=name,s,betx,alfx,bety,alfy,dx,dpx,dy,dpy,mux,muy,keyword,l,angle,k1l;
 twiss,centre,chrom,beta0=newstart,sequence=M4line,file="m4_twiss.tfs";
+!show, element=V901;
+show, element=V901;
 stop;
